@@ -1,0 +1,9 @@
+.idea/
+venv/*
+*.db
+*.рус
+__pycache__
+.DS_Store
+db.sqlite3
+SECRET.py
+courses/tests.py
