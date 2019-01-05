@@ -4,6 +4,7 @@ from configurations import Configuration, values
 
 
 class Common(Configuration):
+
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
     SECRET_KEY = SECRET.SECRET_KEY
@@ -21,6 +22,7 @@ class Common(Configuration):
         'django.contrib.staticfiles',
         'rest_framework',
         'courses',
+        'corsheaders',
     ]
 
     MIDDLEWARE = [
@@ -31,7 +33,21 @@ class Common(Configuration):
         'django.contrib.auth.middleware.AuthenticationMiddleware',
         'django.contrib.messages.middleware.MessageMiddleware',
         'django.middleware.clickjacking.XFrameOptionsMiddleware',
+        'corsheaders.middleware.CorsMiddleware',
+        'django.middleware.common.CommonMiddleware',
     ]
+
+    CORS_ORIGIN_ALLOW_ALL = True
+
+    CORS_ALLOW_CREDENTIALS = True
+
+    CORS_ORIGIN_WHITELIST = (
+        'localhost:3000',
+    )
+
+    CORS_ORIGIN_REGEX_WHITELIST = (
+        'localhost:3000',
+    )
 
     ROOT_URLCONF = 'backend.urls'
 

@@ -30,7 +30,7 @@ To run the project in Production Environment:
 ```bash
 $ python3 /<absolute_path>/otus-backend/manage.py runserver --settings=backend.settings --configuration=Prod
 ```
-
-Then visit `http://127.0.0.1:8000/` to view the app. 
-Then visit `http://127.0.0.1:8000/admin` to see admin panel. 
+Visit:
+ `http://127.0.0.1:8000/courses` to view the api. 
+ `http://127.0.0.1:8000/admin` to see admin panel. 
 

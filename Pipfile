@@ -10,6 +10,7 @@ django = "*"
 djangorestframework = "*"
 configurations = "*"
 django-configurations = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.7"
