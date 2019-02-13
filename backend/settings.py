@@ -21,8 +21,11 @@ class Common(Configuration):
         'django.contrib.messages',
         'django.contrib.staticfiles',
         'rest_framework',
-        'courses',
+        'rest_framework.authtoken',
+        'djoser',
         'corsheaders',
+        'courses',
+
     ]
 
     MIDDLEWARE = [
@@ -36,6 +39,14 @@ class Common(Configuration):
         'corsheaders.middleware.CorsMiddleware',
         'django.middleware.common.CommonMiddleware',
     ]
+
+    REST_FRAMEWORK = {
+        'DEFAULT_AUTHENTICATION_CLASSES': (
+            'rest_framework.authentication.TokenAuthentication',
+        ),
+        'DEFAULT_PERMISSION_CLASSES': (
+            'rest_framework.permissions.AllowAny',)
+    }
 
     CORS_ORIGIN_ALLOW_ALL = True
 

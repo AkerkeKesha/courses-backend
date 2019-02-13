@@ -2,10 +2,12 @@
 
 ## Otus Web Dev, HW7
 
+This is basic backend for online-courses built in Django with packets:
 
-This is basic backend for online-courses. It uses Django and Django Rest Framework in
-order to serialize the Course Model. 
-Django configurations used to separate Production from Development
+ ##### Django Rest Framework: to serialize the Course Model. 
+ ##### Django configurations: to separate Production from Development
+ ##### Django-cors-headers : to talk to front-end
+ ##### Djoser: to use simple User Management Tool
 
 
 ## Building
