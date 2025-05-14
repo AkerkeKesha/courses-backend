@@ -126,3 +126,4 @@ class Prod(Common):
     DOTENV = os.path.join(Common.BASE_DIR, '.env')
     SECRET_KEY = values.SecretValue()
     ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+SESSION_COOKIE_SECURE = True
