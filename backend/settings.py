@@ -9,7 +9,7 @@ class Common(Configuration):
 
     SECRET_KEY = SECRET.SECRET_KEY
 
-    DEBUG = True
+    DEBUG = False
 
     ALLOWED_HOSTS = []
 
